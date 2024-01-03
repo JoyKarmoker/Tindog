@@ -8,7 +8,7 @@ body {
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 h1 {
@@ -50,12 +50,17 @@ h2 {
 
 /* Titile Image */
 .title-img {
+  position: absolute;
+  right: 25%;
   width: 60%;
   transform: rotateZ(25deg);
 }
 
 /* Features */
 #features {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
   padding: 7% 15%;
 }
 
@@ -111,4 +116,55 @@ h2 {
 
 .carousel-inner {
   padding: 7% 15%;
+}
+
+/* Padding Section */
+
+#pricing{
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-collum{
+  padding: 3% 2%;
+}
+
+
+/*Media Query For Mobile Size */
+@media (max-width:1024px) {
+  #title {
+    text-align: center;
+  }
+
+  /* Titile Image */
+  .title-img {
+    position:static;
+    transform: rotate(0);
+  }
+}
+
+
+/*CTA Section*/
+#cta{
+  background-color: #ff4c68;
+  text-align: center;
+  padding: 70px;
+}
+
+.cta-text{
+  font-family: "Montserrat";
+  font-size: 3rem;
+  color: white;
+}
+
+/*Footer-Section*/
+#footer{
+  background-color: #fff;
+  text-align: center;
+  padding: 60px;
+}
+
+.copyright-text{
+  font-family: "Montserrat-thin";
+  color:grey;
 }
